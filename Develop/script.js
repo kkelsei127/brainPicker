@@ -1,5 +1,12 @@
 //GLOBAL VARIABLES HERE
-var timeEl = document.getElementById('countdown');
+var timerEl = document.getElementById('countdown');
+var startBttn = document.getElementById('#startButton'); 
+
+//DISPLAYS THE FOLLOWING:
+//this displays the countdown, but also initializes it
+    //need to figure out how to keep at 60 until event listener
+ countdown = 60;
+
 
 //ON CLICK WITH EVENT LISTENER FOR CLICKING START
 //INTIALIZE TIMER, CHANGE TO QUESTIONS
@@ -7,12 +14,8 @@ var timeEl = document.getElementById('countdown');
 //ON CLICK EVENT LISTENER FOR ANSWER, THIS WILL GO TO NEXT SCREEN
 //MAYBE INCLUDE A WHILE LOOP
 
-//TIMER FUNCTION
-//START AT 60 SECONDS
-//TAKE AWAY 15 SECONDS FOR EACH WRONG ANSWER
-//ELSE NOTHING
 
-    //COPIED THIS FROM SOLVED TIMERS ACTIVITY
+
 // Timer that counts down from 60
 function countdown() {
     var timeLeft = 60;
@@ -32,25 +35,93 @@ function countdown() {
         // Once `timeLeft` gets to 0, set `timerEl` to an empty string
         timerEl.textContent = '';
         // Use `clearInterval()` to stop the timer
-        clearInterval(timeInterval);
-        // Call the `displayMessage()` function
-        //displayMessage();
+        clearInterval(timeInterval);       
       }
     }, 1000);
   }
 
-
-//ONCE QUESTION FUNCTION IS OVER
-//DISPLAY USER INPUT SCREEN
-//GATHER USERS INITIALS / NAME
-//USER HITS SUBMIT
-//THEN LOG TO LEADERBOARD
-//DISPLAY LEADERBOARD
-
-//QUESTION FUNCTION
+//QUESTION
 //WHEN USER CLICKS START BUTTON DISPLAY FIRST QUESTION
     //IF USER SELECTS RIGHT ANSWER DISPLAY MESSAGE
     //IF USER SELECTS WRONG ANSWER DISPLAY MESSAGE
         //TAKE 15 SECONDS FROM TIMER
 //REPEAT THIS FOR ALL FIVE QUESTIONS
 //END FUNCTION
+function makeQuiz(event){
+    event.preventDefault;
+    startBttn.addEventListener("click", quiz());
+    console.log('button clicked');
+    countdown();
+}
+
+
+//QUESTION FUNCTION
+//need to display each keyvalue object pair below const questions
+
+//for each wrong answer TIMER FUNCTION
+//TAKE AWAY 15 SECONDS FOR EACH WRONG ANSWER
+//ELSE NOTHING
+function quiz() {
+    console.log('quiz will load, hopefully....');
+}
+
+const questions = [
+    {
+        question: 'This is question 1',
+        answers: {
+            a: 'answer a',
+            b: 'answer b',
+            c: 'answer c'
+        },
+        correctAnswer: 2,
+    },
+    {
+        question: 'This is question 2',
+        answers: {
+            a: 'answer a',
+            b: 'answer b',
+            c: 'answer c'
+        },
+        correctAnswer: 2,
+    },
+    {
+        question: 'This is question 3',
+        answers: {
+            a: 'answer a',
+            b: 'answer b',
+            c: 'answer c'
+        },
+        correctAnswer: 2,
+    },
+    {
+        question: 'This is question 4',
+        answers: {
+            a: 'answer a',
+            b: 'answer b',
+            c: 'answer c'
+        },
+        correctAnswer: 2,
+    },
+    {
+        question: 'This is question 5',
+        answers: {
+            a: 'answer a',
+            b: 'answer b',
+            c: 'answer c'
+        },
+        correctAnswer: 2,
+    },
+];
+
+
+
+//ONCE Quiz  IS OVER
+//DISPLAY USER INPUT SCREEN
+//GATHER USERS INITIALS / NAME
+//USER HITS SUBMIT
+//THEN LOG TO LEADERBOARD
+//DISPLAY LEADERBOARD
+
+
+
+
