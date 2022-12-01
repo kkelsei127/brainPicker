@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="reset" href="./reset.css"/>
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="reset" href="./Develop/reset.css"/>
+    <link rel="stylesheet" href="./Develop/style.css"/>
 </head>
 <body>
     <div class="container">
         <!--AHREF ATTRIBUTE FOR HIGH SCORE LIST-->
         <h2 id="countdown"></h2>
     </div>
-    <div class="startButton"><button>Start Quiz!</button></div>
+    <div id="startButton"><button>Start Quiz!</button></div>
     <!--Rules-->
     <div class="instructions">
         <div class="instructionsTitle">
@@ -29,6 +29,15 @@
             <button class="replay">Continue</button>
         </div>
     </div>
+    <div id="questionsDiv" class="hidden">
+        <h3 id="questionTitle"></h3>
+        <div id="choices">
+
+        </div>
+    </div>
+    <div id="finalScreen" class="hidden">
+        <h1>Finished</h1>
+    </div>
     <!--MAIN HERE-->
         <!--ONE CONTAINER OR PARENT EL - DIV PERHAPS? WRAPPER?-->
             <!--CONTAINER FOR QUESTIONS WITH A CLASS THE CLASS WILL LINK TO CSS AND JS, CSS WILL CONTROL STYLE, JAVA WILL SWITCH THE QUESTIONS-->
@@ -38,6 +47,8 @@
             <!--CLOSE ANSWER CONTAINER-->
         <!--CLOSE MAIN QUIZ WRAPPER-->
     <!--CLOSE MAIN-->
-    <script src="./script.js"></script>
+    <!-- Added link to the jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./Develop/script.js"></script>
 </body>
 </html>
