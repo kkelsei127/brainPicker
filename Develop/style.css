@@ -2,7 +2,9 @@
     display: none;
 }
 
-
+body {
+    background-color: black;
+}
 
 /*HEADER CONTAINERS
 THIS SHOULD INCLUDE HIGH SCORE AND TIMER
