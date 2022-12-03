@@ -3,6 +3,7 @@ var timerEl = document.getElementById('countdown');
 var startBttn = document.getElementById('startButton');
 var questionsDiv = document.getElementById('questionsDiv');
 var questionTitle = document.getElementById('questionTitle');
+var buttonsDiv = document.getElementById('buttons');
 var choices = document.getElementById('choices');
 var questionIndex = 0;
 var timeLeft ;
