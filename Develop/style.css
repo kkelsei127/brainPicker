@@ -3,9 +3,73 @@
 }
 
 body {
-    background-color: black;
+    background-color: #D991A4;
+    color:aquamarine;
 }
 
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 75px;
+}
+
+.head{
+    background-color:aquamarine;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.startButton{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 100%;
+}
+
+.instructions, .instructionsTitle{
+    background-color: rgb(192, 255, 231);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: 'IBM Plex Serif', serif;
+    color: black;
+    padding: 15x;
+    margin: 10px;
+}
+.instructionsTitle{
+    background-color: antiquewhite;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+
+
+#questionsDiv, #choices{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    width: 100%;
+}
+
+button {
+    background-color: blue;
+    color:wheat;
+    font-size: medium;
+    padding: 10px;
+    margin: 15px;
+}
+
+#choices button{
+    background-color: #8C7B65;
+    color: #FCF6E8;
+}
 /*HEADER CONTAINERS
 THIS SHOULD INCLUDE HIGH SCORE AND TIMER
 THERE SHOULD BE TWO CONTAINERS WITH THE INFORMATION SPACED APART
