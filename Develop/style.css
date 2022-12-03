@@ -3,19 +3,27 @@
 }
 
 body {
-    background-color: #D991A4;
-    color:aquamarine;
+    background-color: #381e31;
+    color:black;
 }
 
 main{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 75px;
+    padding: 25px 75px 15px 75px;
 }
 
+.card{
+    background-color: #592547;
+    width: fit-content;
+    padding: 30px;
+    border-style: solid;
+    border-color: #D9AE30;
+    border-width: 2px;
+    border-radius: 25px;
+}
 .head{
-    background-color:aquamarine;
     width: 100%;
     display: flex;
     align-items: center;
@@ -31,18 +39,20 @@ main{
 }
 
 .instructions, .instructionsTitle{
-    background-color: rgb(192, 255, 231);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     font-family: 'IBM Plex Serif', serif;
     color: black;
-    padding: 15x;
     margin: 10px;
 }
+
+.instructionsList{
+    padding: 25px 0;
+}
+
 .instructionsTitle{
-    background-color: antiquewhite;
     font-weight: bolder;
     font-size: x-large;
 }
@@ -50,7 +60,6 @@ main{
 
 
 #questionsDiv, #choices{
-    background-color: aquamarine;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -58,18 +67,50 @@ main{
     width: 100%;
 }
 
+
 button {
-    background-color: blue;
+    background-color: #8C7B65;
     color:wheat;
     font-size: medium;
     padding: 10px;
     margin: 15px;
+    border-radius: 15px;
+    border-color: #D9AE30;
 }
 
 #choices button{
-    background-color: #8C7B65;
+
     color: #FCF6E8;
 }
+
+#leaderboardForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;;
+    align-items: center;
+    justify-content: baseline;
+    padding: 20px 0;
+}
+
+#leaderName{
+    width: 300px;
+    height: 30px;
+    border-style: solid;
+    border-color: #D9AE30;
+    border-radius: 25px;
+    text-align: center;
+    background-color: #d0bea4;
+    color: black;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
 /*HEADER CONTAINERS
 THIS SHOULD INCLUDE HIGH SCORE AND TIMER
 THERE SHOULD BE TWO CONTAINERS WITH THE INFORMATION SPACED APART

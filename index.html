@@ -13,47 +13,49 @@
 </head>
 <body>
     <main>
-        <div class="head">
-            <div class="container">
-                <!--AHREF ATTRIBUTE FOR HIGH SCORE LIST-->
-                <h2 id="countdown"></h2>
+        <div class="card">
+            <div class="head">
+                <div class="container">
+                    <!--AHREF ATTRIBUTE FOR HIGH SCORE LIST-->
+                    <h2 id="countdown"></h2>
+                </div>
+                <div id="startButton"><button>Start Quiz!</button></div>
             </div>
-            <div id="startButton"><button>Start Quiz!</button></div>
-        </div>
-        <!--Rules-->
-        <div class="instructions">
-            <div class="instructionsTitle">
-                <span>Rules of the Game</span>
+            <!--Rules-->
+            <div class="instructions">
+                <div class="instructionsTitle">
+                    <span>Rules of the Game</span>
+                </div>
+                <div class="instructionsList">
+                    <div class="rules">1. This is timed</div>
+                    <div class="rules">2. Each wrong answer deducts 15 seconds</div>
+                    <div class="rules">3. At the end log your name to see yourself on the highscore list</div>
+                </div>
             </div>
-            <div class="instructionsList">
-                <div class="rules">1. This is timed</div>
-                <div class="rules">2. Each wrong answer deducts 15 seconds</div>
-                <div class="rules">3. At the end log your name to see yourself on the highscore list</div>
-            </div>
-            <div class="'buttons">
-                <button class="exit">Exit Quiz</button>
-                <button class="replay">Continue</button>
-            </div>
-        </div>
-        <div id="questionsDiv" class="hidden">
-            <h3 id="questionTitle"></h3>
-            <div id="choices">
+            <!--Questions-->
+            <div id="questionsDiv" class="hidden">
+                <h3 id="questionTitle"></h3>
+                <div id="choices">
 
+                </div>
             </div>
-        </div>
-        <div id="finalScreen" class="hidden">
-            <h1>Finished</h1>
+            <!--FinalScreen form entry-->
+            <div id="finalScreen" class="hidden">
+                <h3>Please enter your initials to be added to the Leaderboard!</h3>
+                <form id="leaderboardForm">
+                    <input type="text" class="form-input w-100" id="leaderName" name="leaderName" placeholder='Enter your intials here!' />
+                    <div id="buttons" class="hidden">
+                        <button class="exit">Exit Quiz</button>
+                        <button class="replay">Continue</button>
+                    </div>
+                </form>
+            </div>
+            <!--Display leaderboard-->
+            <div id="leaderBoard" class="hidden">
+                <ul id="leaders"></ul>
+            </div>
         </div>
     </main>
-    <!--MAIN HERE-->
-        <!--ONE CONTAINER OR PARENT EL - DIV PERHAPS? WRAPPER?-->
-            <!--CONTAINER FOR QUESTIONS WITH A CLASS THE CLASS WILL LINK TO CSS AND JS, CSS WILL CONTROL STYLE, JAVA WILL SWITCH THE QUESTIONS-->
-                <!--QUESTIONS WILL BE LISTED IN JS-->
-            <!--CLOSE QUESTION CONTAINER-->
-            <!--CONTAINER FOR ANSWER CHOICES-->
-            <!--CLOSE ANSWER CONTAINER-->
-        <!--CLOSE MAIN QUIZ WRAPPER-->
-    <!--CLOSE MAIN-->
     <!-- Added link to the jQuery library -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./Develop/script.js"></script>
