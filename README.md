@@ -33,7 +33,7 @@ THEN I can save my initials and my score
 
 ![The following image shows the completed layout.](./Develop/Assets/startQuiz.png)
 
-![The following image shows a question layout.](./Develop/Assets/startQuiz.png)
+![The following image shows a question layout.](./Develop/Assets/question.png)
 
 ## Link to deployed site
 
