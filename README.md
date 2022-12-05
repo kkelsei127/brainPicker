@@ -36,7 +36,7 @@ THEN I can save my initials and my score
 ![The following image shows a question layout.](./Develop/Assets/question.png)
 
 ## Link to deployed site
-
+https://kkelsei127.github.io/brainPicker/
 
 
 ## License
