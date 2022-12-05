@@ -94,8 +94,6 @@ function countdown() {
         var time = document.getElementById('time')
         //show the div
         time.style.display = 'flex'
-        //allow user to retry
-        startBttn.style.display = 'flex'
       }
     }, 1000);
   }
