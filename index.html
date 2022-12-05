@@ -18,11 +18,12 @@
                 <div class="container">
                     <!--AHREF ATTRIBUTE FOR HIGH SCORE LIST-->
                     <h2 id="countdown"></h2>
+                    <div id= "time" class="hidden">Time's up! try again!</div>
                 </div>
                 <div id="startButton"><button>Start Quiz!</button></div>
             </div>
             <!--Rules-->
-            <div class="instructions">
+            <div id="instructions">
                 <div class="instructionsTitle">
                     <span>Rules of the Game</span>
                 </div>
@@ -42,17 +43,11 @@
             <!--FinalScreen form entry-->
             <div id="finalScreen" class="hidden">
                 <h3>Please enter your initials to be added to the Leaderboard!</h3>
-                <form id="leaderboardForm">
-                    <input type="text" class="form-input w-100" id="leaderName" name="leaderName" placeholder='Enter your intials here!' />
-                    <div id="buttons" class="hidden">
-                        <button class="exit">Exit Quiz</button>
-                        <button class="replay">Continue</button>
-                    </div>
+                <form id="leaderBoardForm" method="post">
+                    <input type="text" id="leaderName" name="leaderName" placeholder='Enter your intials here!' />
                 </form>
-            </div>
-            <!--Display leaderboard-->
-            <div id="leaderBoard" class="hidden">
-                <ul id="leaders"></ul>
+                <ul id="leaderList"></ul>
+
             </div>
         </div>
     </main>
