@@ -175,6 +175,7 @@ function checkAnswer(){
 function finishQuiz(){
     //this stops the timer once the quiz is complete
     clearInterval(timeInterval)
+    timerEl.textContent = ('You finished with ' + timeLeft + ' second(s) left!')
     //this sets the questions div to hidden
     questionsDiv.style.display = 'none'
     //this removes the hidden attribute from the final screen
@@ -222,8 +223,8 @@ leaderBoardForm.addEventListener('submit', function(event) {
     var leaderText = leaderInput.value.trim();
 
     var user = {
-        leaderText: leaderText,
-        score: correct
+        Name: leaderText,
+        Score: correct
     }
 
     //return from function early if submitted leaderText is blank
@@ -232,8 +233,11 @@ leaderBoardForm.addEventListener('submit', function(event) {
     }
 
     //add new user to leaders array, clear the input
-    leaders.push(JSON.stringify(user.leaderText));
+    leaders.push(JSON.stringify(user));
     leaderInput.value = '';
+
+    //take away input field, add start button to replay
+    leaderName.style.display = 'none';
 
     //store updated leaders in localStorage, re-render list
     storeLeaders();
