@@ -22,49 +22,49 @@ var timeInterval ;
 
 const questions = [
     {
-        question: 'This is question 1',
+        question: 'In key-value pairs, to which side is the "key" side and which side is the "value" side?',
         answers: [
-             'answer a',
-             'answer b',
-             'answer c'
+             'Key: left, Value: right',
+             'Key: right, Value: Left',
+             'Key: left, Value: left'
         ],
-        correctAnswer: 'answer a',
+        correctAnswer: 'Key: left, Value: right',
     },
     {
-        question: 'This is question 2',
+        question: 'What JavaScript method converts an object or an array into a string?',
         answers: [
-            'answer a',
-            'answer b',
-            'answer c'
+            'JSON.parse()',
+            'JASON.stringify()',
+            'JSON.stringify()'
        ],
-       correctAnswer: 'answer a',
+       correctAnswer: 'JSON.stringify()',
     },
     {
-        question: 'This is question 3',
+        question: 'In CSS what selector is used to call an ID?',
         answers: [
-            'answer a',
-            'answer b',
-            'answer c'
+            'The "."',
+            'The "#"',
+            'The "$"'
        ],
-       correctAnswer: 'answer a',
+       correctAnswer: 'The "#"',
     },
     {
-        question: 'This is question 4',
+        question: 'What does DOM stand for?',
         answers: [
-            'answer a',
-            'answer b',
-            'answer c'
+            'Department of Ministry',
+            'Department of Muggles',
+            'Document Object Model'
        ],
-       correctAnswer: 'answer a',
+       correctAnswer: 'Document Object Model',
     },
     {
-        question: 'This is question 5',
+        question: 'What method inserts a set of string object after the last child of an element?',
         answers: [
-            'answer a',
-            'answer b',
-            'answer c'
+            'Element.append()',
+            'Element.add()',
+            'Element.attribute()'
        ],
-       correctAnswer: 'answer a',
+       correctAnswer: 'Element.append()',
     },
 ];
 
