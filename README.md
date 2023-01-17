@@ -29,6 +29,9 @@ WHEN the game is over
 THEN I can save my initials and my score
 ```
 
+## Usage
+To iniate the quiz simply hit start quiz located at the top of the card and test your skills by clicking the correct answer!
+
 ## Screenshots
 
 ![The following image shows the completed layout.](./Develop/Assets/startQuiz.png)
